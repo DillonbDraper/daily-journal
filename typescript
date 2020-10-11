@@ -1,0 +1,39 @@
+Script started on 2020-10-09 15:38:50-05:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="237" LINES="12"]
+Welcome to your terminal, dillon.  Today is Friday.
+The site of a cozy new terminal fills you with determination!
+    October 2020      
+Su Mo Tu We Th Fr Sa  
+             1  2  3  
+ 4  5  6  7  8 [7m 9[27m 10  
+11 12 13 14 15 16 17  
+18 19 20 21 22 23 24  
+25 26 27 28 29 30 31  
+                      
+Agent pid 3791
+Enter passphrase for /home/dillon/.ssh/id_rsa: 
+Identity added: /home/dillon/.ssh/id_rsa (dillonbdraper@gmail.com)
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                             ]2;dillon@DESKTOP-R42JLLB: ~]1;~[0m[27m[24m[J[01;32m➜  [36m~[00m [K[?1h=[?2004hwworkspace[1m/[0m[0m/daily-journal[1m/[0m[0m [?1l>[?2004l
+]2;workspace/daily-journal]1;workspace/daily-journal[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                             ]2;dillon@DESKTOP-R42JLLB: ~/workspace/daily-journal]1;..daily-journal[0m[27m[24m[J[01;32m➜  [36mdaily-journal[00m [01;34mgit:([31mdd-DOM-render[34m) [33m✗[00m [K[?1h=[?2004hccd scripts[1m/[0m[0m [?1l>[?2004l
+]2;cd scripts]1;cd[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                             ]2;dillon@DESKTOP-R42JLLB: ~/workspace/daily-journal/scripts]1;..urnal/scripts[0m[27m[24m[J[01;32m➜  [36mscripts[00m [01;34mgit:([31mdd-DOM-render[34m) [33m✗[00m [K[?1h=[?2004httouch [0m[27m[24m[J[01;32m➜  [36mscripts[00m [01;34mgit:([31mdd-DOM-render[34m) [33m✗[00m touch journe      JournalEntryLIst.js      ist.js Journea  alEntry.js[?1l>[?2004l
+]2;touch JournalEntryList.js JournalEntry.js]1;touch[1m[7m%[27m[1m[0m                                                                                                             ]2;dillon@DESKTOP-R42JLLB: ~/workspace/daily-journal/scripts]1;..urnal/scripts[0m[27m[24m[J[01;32m➜  [36mscripts[00m [01;34mgit:([31mdd-DOM-render[34m) [33m✗[00m [K[?1h=[?2004hsserve[?1l>[?2004l
+]2;serve]1;serve[31mERROR:[39m Cannot copy to clipboard: Couldn't find the required `xsel` binary. On Debian/Ubuntu you can install it with: sudo apt install xsel
+[32m[39m
+[32m   ┌───────────────────────────────────────────────────┐[39m
+   [32m│[39m                                                   [32m│[39m
+   [32m│[39m   [32mServing![39m                                        [32m│[39m
+   [32m│[39m                                                   [32m│[39m
+   [32m│[39m   [1m- Local:[22m            http://localhost:5000       [32m│[39m
+   [32m│[39m   [1m- On Your Network:[22m  http://192.168.1.178:5000   [32m│[39m
+   [32m│[39m                                                   [32m│[39m
+[32m   └───────────────────────────────────────────────────┘[39m
+[32m[39m
+^C
+[35mINFO:[39m Gracefully shutting down. Please wait...
+[1m[7m%[27m[1m[0m                                                                                                             ]2;dillon@DESKTOP-R42JLLB: ~/workspace/daily-journal/scripts]1;..urnal/scripts[0m[27m[24m[J[01;32m➜  [36mscripts[00m [01;34mgit:([31mdd-DOM-render[34m) [33m✗[00m [K[?1h=[?2004h,,,,  ...[?1l>[?2004l
+]2;..]1;..[1m[7m%[27m[1m[0m                                                                                                             ]2;dillon@DESKTOP-R42JLLB: ~/workspace/daily-journal]1;..daily-journal[0m[27m[24m[J[01;32m➜  [36mdaily-journal[00m [01;34mgit:([31mdd-DOM-render[34m) [33m✗[00m [K[?1h=[?2004hsserve[?1l>[?2004l
+]2;serve]1;serve[31mERROR:[39m Cannot copy to clipboard: Couldn't find the required `xsel` binary. On Debian/Ubuntu you can install it with: sudo apt install xsel
+[32m[39m
+[32m   ┌───────────────────────────────────────────────────┐[39m
+   [32m│[39m                                                   [32m│[39m
+   [32m│[39m   [32mServing![39m                                        [32m│[39m
+   [32m│[39m                                  
