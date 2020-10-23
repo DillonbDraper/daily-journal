@@ -1,15 +1,8 @@
-<!doctype html>
-<html lang="en">
+const entryTarget = document.querySelector("#container")
 
-<head>
-    <meta charset="utf-8">
-    <title>Daily Journal</title>
-    <link rel="stylesheet" href="./styles/main.css">
-</head>
-
-<body>
-    <main id="container">
-        <!-- <h2>Daily Journal</h2>
+export const JournalFormComponent = () => {
+    entryTarget.innerHTML+= `
+    <h2>Daily Journal</h2>
         <form action="">
             <fieldset>
                 <label for="journalDate">Date of entry</< /label>
@@ -44,13 +37,6 @@
                   </select>
             </fieldset>
         </form>
-        <button type ="submit" id="record">Record Journal Entry</button> -->
-        <section id="entryLog">
-            
-        </section>
-    </main>
-
-    <script type="module" src="./scripts/main.js"></script>
-</body>
-
-</html>
+        <button type ="submit" id="record">Record Journal Entry</button>
+    `
+}
