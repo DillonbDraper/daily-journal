@@ -48,3 +48,10 @@ export const saveEntries = (newJournalEntry) => { return fetch("http://localhost
 eventHub.addEventListener("journalStateChanged", e => {
     EntryListComponent()
 })
+
+export const deleteEntry = entryId => {
+    return fetch(`http://localhost:8088/entries/${entryId}`, {
+        method: "DELETE",
+    })
+    .then(EntryListComponent)
+}
