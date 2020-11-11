@@ -44,6 +44,15 @@ export const JournalFormComponent = () => {
             </fieldset>
         </form>
         <button type ="submit" id="record">Record Journal Entry</button>
+        <fieldset>
+        ${allMoods.map(
+            (mood) => {
+               return ` <input type="radio" name="mood" id="mood--${mood.id}">
+                <label for="mood">${mood.label}</label>`
+            }
+        ).join("")
+            }
+    </fieldset>
     `
         })
 }

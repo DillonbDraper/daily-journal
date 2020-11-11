@@ -1,3 +1,5 @@
+const eventHub = document.getElementById("container")
+
 export const JournalEntryComponent = (entry) => {
     return `
         <section id="entry--${entry.id}" class="journalEntry">
@@ -9,3 +11,16 @@ export const JournalEntryComponent = (entry) => {
         </section>
     `
 }
+
+eventHub.addEventListener("click", e => {
+    if (e.target.id.startsWith("delete--")) {
+        const idArray = e.target.id.split("--")
+
+        const deleteEntry = new CustomEvent("deleteEntry", {
+            detail: {
+                entryId: idArray[1]
+            }
+        })
+        eventHub.dispatchEvent(deleteEntry)
+    }
+})
