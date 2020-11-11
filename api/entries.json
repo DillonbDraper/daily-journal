@@ -1,28 +1,59 @@
 {
-    "entries": [
-            {
-                "id": 1,
-                "date": "09/30/2020",
-                "concept": "HTML & CSS",
-                "entry": "We talked about HTML components and how to make grid layouts with Flexbox in CSS.",
-                "mood": "Mid"
-            },
-            {
-                "id": 2,
-                "date": "10/02/2020",
-                "concept": "Complex Flexbox",
-                "entry": "I learned about wireframing with flexbox in mind and how to effectively save myself a ton of time while coding.",
-                "mood": "Triumphant"
-            },
-            {
-                "id": 3,
-                "date": "10/07/2020",
-                "concept": "Javascript DOM manipulation",
-                "entry": "Today we learned how to use modularly organized JS to automate HTML generation.  Both the general topics and the modularization were kinda hard.",
-                "mood": "Fatigued"
-            }
-            
-            
-        ]
-        
+  "entries": [
+    {
+      "date": "09/30/2020",
+      "concept": "HTML & CSS",
+      "entry": "We talked about HTML components and how to make grid layouts with Flexbox in CSS.",
+      "id": 1,
+      "moodId": 1
+    },
+    {
+      "date": "10/02/2020",
+      "concept": "Complex Flexbox",
+      "entry": "I learned about wireframing with flexbox in mind and how to effectively save myself a ton of time while coding.",
+      "id": 2,
+      "moodId": 3
+    },
+    {
+      "date": "10/07/2020",
+      "concept": "Javascript DOM manipulation",
+      "entry": "Today we learned how to use modularly organized JS to automate HTML generation.  Both the general topics and the modularization were kinda hard.",
+      "id": 3,
+      "moodId": 3
+    }
+  ],
+  "moods": [
+    {
+      "id": 1,
+      "label": "Excited"
+    },
+    {
+      "id": 2,
+      "label": "Frustrated"
+    },
+    {
+      "id": 3,
+      "label": "Hopeful"
+    },
+    {
+      "id": 4,
+      "label": "Fatigued"
+    },
+    {
+      "id": 5,
+      "label": "Confident"
+    },
+    {
+      "id": 6,
+      "label": "Triumphant"
+    },
+    {
+      "id": 7,
+      "label": "Lost"
+    },
+    {
+      "id": 8,
+      "label": "Mid"
+    }
+  ]
 }

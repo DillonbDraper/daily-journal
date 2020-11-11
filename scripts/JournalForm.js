@@ -1,11 +1,20 @@
-const entryTarget = document.querySelector("#container")
+import { saveEntries } from "./JournalDataProvider.js"
+import { getMoods, useMoods } from "./Moods/MoodProvider.js"
+
+const eventHub = document.getElementById("container")
+const formContainer = document.getElementById("formContainer")
 
 export const JournalFormComponent = () => {
-    entryTarget.innerHTML+= `
+
+    getMoods()
+        .then(() => {
+            const allMoods = useMoods()
+
+            formContainer.innerHTML += `
     <h2>Daily Journal</h2>
         <form action="">
             <fieldset>
-                <label for="journalDate">Date of entry</< /label>
+                <label for="journalDate">Date of entry </label>
                     <input type="date" name="jornalDate" id="journalDate">
             </fieldset>
         </form>
@@ -22,21 +31,40 @@ export const JournalFormComponent = () => {
             </fieldset>
         </form>
         <form action="">
-            <fieldset>
+            <fieldset>` + `
                 <label for="mood">Mood for the Day</label>
-                <select id="mood" name="mood"> 
-                      <option>Hopeful</option>
-                      <option selected>Frustrated</option>
-                      <option>Excited</option>
-                      <option>Fatigued</option>
-                      <option>Confident</option>
-                      <option>Lost</option>
-                      <option>Triumphant</option>
-                      <option>Mid</option>
-
+                <select id="moodSelector" name="mood"> 
+                ${allMoods.map(
+                (mood) => {
+                    return `<option value="${mood.id}">${mood.label}</option>`
+                }
+            ).join("")
+                }
                   </select>
             </fieldset>
         </form>
         <button type ="submit" id="record">Record Journal Entry</button>
     `
+        })
 }
+
+
+
+eventHub.addEventListener("click", e => {
+    if (e.target.id === "record") {
+
+        const journalEntry = document.getElementById("journalEntry")
+        const concepts = document.getElementById("conceptsCovered")
+        const date = document.getElementById("journalDate")
+        const moodSelector = document.getElementById("moodSelector")
+
+        const entry = {
+            date: date.value,
+            concept: concepts.value,
+            entry: journalEntry.value,
+            moodId: parseInt(moodSelector.value)
+        }
+
+        saveEntries(entry)
+    }
+})
